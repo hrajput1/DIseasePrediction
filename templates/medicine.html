@@ -1,0 +1,1023 @@
+<html>
+<head>
+	<title> Medicines </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename="medicine/css/medstyle1.css")}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+a:link, a:visited {
+  background-color: gray;
+  color: black;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<img src="{{ url_for('static' , filename="medicine/images/cure.png")}}" width="100%" height="400px">
+
+<!--Make sure the form has the autocomplete function switched off:-->
+
+<h3><b>Know Medicines of your Disease here...</b></h3>
+<div class="w3-container">
+  <div class="autocomplete" style="width:300px;">
+  
+    <input  type="text" name="disease" id="dis" placeholder="Disease">
+	<hr>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onclick="myFunction()" class="w3-button w3-black">Check here</button>
+	
+	<!--Disease box-->
+	
+  <div id="fn" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('fn').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Fungal Infection - Medicine</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)clotrimazole.</p>       
+        <p>2)Econazole.</p>		
+        <p>3)Ketoconazole.</p>		
+        <p>4)hydrocortisone.</p>
+        <p>5)Terbinafine</p>	
+        <p>6)Posaconazole</p>	
+	 </div>
+	 <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+  <div id="ay" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ay').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Allergy - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Brompheniramine (Dimetane)</p>
+        <p>2)Cetirizine (Zyrtec)</p>
+        <p>3)Chlorpheniramine (Chlor-Trimeton)</p>
+		    <p>4)Clemastine (Tavist)</p>
+		    <p>5)Diphenhydramine (Benadryl)</p>
+		    <p>6)Loratadine (Alavert, Claritin)</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="gd" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('gd').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>GERD - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Dexlansoprazole</p>
+		    <p>2)Dexrabeprazole Sodium</p>
+		    <p>3)Esomeprazole</p>
+		    <p>4)Lansoprazole</p>
+		    <p>5)Levosulpiride</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="cs" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cs').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Chronic cholestasis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)ursodiol (Rx) for Adult { capsules (Actigall) 300mg, tablets (Urso, Urso Forte)250mg & 500mg }</p>
+		    <p>2)ursodiol (Rx) for pediatric { capsules (Actigall) 300mg, tablets (Urso, Urso Forte)250mg & 500mg }</p>
+		    <p>3)Before taking any drug please first concern with your doctor.</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="dn" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('dn').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Drug Reaction - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Antihistamines: when it thinks a substance, such as an allergen, is harmful.</p>
+		    <p>2)Corticosteroids: swelling of your airways and other serious symptoms.</p>
+		    <p>3)Bronchodilators: wheezing or coughing</p>
+		    <p>4)Consult a doctor for medical advice</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="pe" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('pe').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Peptic ulcer disease - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Pantoprazole</p>
+		    <p>2)Protonix</p>
+		    <p>3)famotidine</p>
+		    <p>4)Pepcid</p>
+		    <p>5)Librax</p>
+		    <p>6)Glycopyrrolate</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="as" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('as').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>AIDS - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Non-nucleoside reverse transcriptase inhibitors (NNRTIs)</p>
+		    <p>2)Nucleoside reverse transcriptase inhibitors (NRTIs)</p>
+		    <p>3)Protease inhibitors (PIs)</p>	
+		    <p>4)Fusion inhibitors</p>
+        <p>5)Post-attachment inhibitors</p>		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="ds" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ds').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Diabetes - Medicine</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Insulin (used it after doctor's advice)</p>       
+        <p>2)Pramlintide (used before meals.)</p>		
+        <p>3)acarbose (Precose)</p>		
+        <p>4)metformin-alogliptin (Kazano)</p>	
+		    <p>5)alogliptin-pioglitazone (Oseni)</p>
+		    <p>6)dulaglutide (Trulicity)</p>
+	    </div>
+	 <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+ </div>
+
+  <div id="gs" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('gs').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Gastroenteritis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+		    <p>1)Zofran</p>
+		    <p>2)ondansetron</p>
+		    <p>3)doxycycline</p>
+		    <p>4)Zofran ODT</p>
+		    <p>5)Vibramycin</p>
+		    <p>6)ceftriaxone</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="ba" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ba').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Bronchial Asthma - Medicine</h2>
+      </header>
+      <div class="w3-container">
+		    <p>1)Theophylline</p>
+		    <p>2)Reslizumab (Cinqair)</p>
+		    <p>3)Mepolizumab (Nucala)</p>
+		    <p>4)Omalizumab (Xolair)</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="hn" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hn').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hypertension - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)benazepril (Lotensin)</p>
+		    <p>2)captopril (Capoten)</p>
+		    <p>3)fosinopril (Monopril)</p>
+		    <p>4)lisinopril (Prinivil, Zestril)</p>
+		    <p>5)perindopril (Aceon)</p>		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="me" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('me').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Migraine - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)almotriptan (Axert)</p>
+		    <p>2)eletriptan (Relpax)</p>
+		    <p>3)rizatriptan (Maxalt, Maxalt-MLT)</p>
+		    <p>4)naratriptan (Amerge)</p>
+		    <p>5)zolmitriptan (Zomig)</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="ces" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ces').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Cervical spondylosis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Baclofen</p>
+		    <p>2)Botulinum Toxin Type A</p>
+		    <p>3)Chondroitin</p>	
+        <p>4)Flurbiprofen</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="ps" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ps').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Paralysis (brain hemorrhage) - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>Consult a doctor for medical advice</p>		   
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+  <div id="je" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('je').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Jaundice - Medicine</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Allen 18 jaundice drop.</p>       
+        <p>2)Schwabe India Chionanthus virginica MT</p>		
+        <p>3)Himalaya Liv.52 Pet (Liquid, Drops). </p>		
+        <p>4)Livayu - Ayurvedic Liver Protection Medicine</p>	
+	 </div>
+	 <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="ma" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ma').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Malaria - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)artemether / lumefantrine</p>
+        <p>2)Coartem</p>
+        <p>3)Malarone</p>
+		    <p>4)doxycycline</p>
+		    <p>5)chloroquine</p>	
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="cx" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cx').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Chicken pox - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)If you have a fever, your doctor may recommend acetaminophen or ibuprofen.</p>
+        <p>2)If you appear dehydrated and are unable to drink fluids, your doctor may recommend IV fluids either in an emergency room or as a hospitalized patient.</p>
+        <p>3)Secondary bacterial skin infections may be treated with antibiotics. Because a virus causes chickenpox, no antibiotic can cure the disease.</p>
+        <p>4)Neonatal VZV infection may be treated with VZIG (varicella zoster immune globulin) -- a form of highly concentrated anti-VZV gamma globulin.</p>
+        <p>5)Consult a doctor for medical advice</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="de" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('de').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Dengue - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Acetaminophen</p>
+		    <p>2)Supportive care in a hospital</p>
+		    <p>3)Blood pressure monitoring</p>	
+		    <p>4)Transfusion to replace blood loss</p>
+	
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+<div id="td" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('td').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Typhoid - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)ciprofloxacin</p>
+		    <p>2)Cipro</p>
+		    <p>3)ceftriaxone</p>
+		    <p>4)Azithromycin Dose Pack</p>
+        <p>5)Zithromax</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+  
+  <div id="ha" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ha').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis A - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)GamaSTAN S / D</p>
+		    <p>2)Immune globulin intramuscular</p>
+		    <p>3)Havrix®</p>	
+		    <p>4)Vaqta®</p>		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+<div id="hb" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hb').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis B - Medicine</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Baraclude</p>       
+        <p>2)Viread</p>		
+        <p>3)tenofovir</p>		
+        <p>4)entecavir</p>	
+        <p>5)lamivudine</p>
+	 </div>
+	 <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+ </div>
+  
+  <div id="hc" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hc').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis C - Medicine</h2>
+      </header>
+      <div class="w3-container">
+		    <p>1)Ribavirin.</p>
+		    <p>2)Combination drugs.</p>
+		    <p>3)Harvoni.</p>
+		    <p>4)Zepatier.</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="hd" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hd').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis D - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Consult a doctor for medical advice.</p>
+		    <p>2)No pharmacologic treatment for HDV has been approved</p>
+		    <p>3)Potential new therapies remain under investigation, including prenylation inhibitors (against HDV only), as well as viral entry inhibitors and HBsAg-release inhibitors (against HDV and hepatitis B virus [HBV] coinfection)</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="he" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('he').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis E - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)For people who have severe acute illness and who are not pregnant, treatment with the medication ribavirin for 21 days has resulted in improved liver function in some small studies.</p>
+		    <p>2)Pregnant women, people with suppressed immune systems, or people with acute liver failure will likely be hospitalized and monitored.</p>
+		    <p>3)Consult a doctor for medical advice.</p>
+				
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="als" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('als').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Alcoholic hepatitis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)propylthiouracil</p>
+		    <p>2)oxandrolone</p>
+		    <p>3)Oxandrin</p>
+		    <p>4)Consult a doctor for medical advice.</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="ts" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ts').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Tuberculosis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)isoniazid / pyrazinamide / rifampin</p>
+		    <p>2)ethambutol</p>
+		    <p>3)isoniazid</p>	
+		    <p>4)rifampin</p>		
+		    <p>5)pyrazinamide</p>	
+        <p>6)Amikin</p>	
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="cd" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cd').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Common Cold - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Benadryl</p>
+		    <p>2)diphenhydramine</p>
+		    <p>3)Vicks Nyquil D Cold and Flu Nighttime Relief</p>	
+		    <p>4)Coricidin HBP Cold & Flu</p>
+		    <p>5)acetaminophen / chlorpheniramine / phenylephrine</p>	
+		    <p>6)pseudoephedrine / triprolidine</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="pa" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('pa').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Pneumonia - Medicine</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)levofloxacin</p>       
+        <p>2)clarithromycin</p>		
+        <p>3)Levaquin</p>		
+        <p>4)azithromycin</p>	
+		    <p>5)doxycycline</p>
+        <p>6)Avelox</p>
+        <p>7)moxifloxacin</p>
+	 </div>
+	 <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="dims" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('dims').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Dimorphic hemorrhoids(piles) - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Proctosol-HC </p>
+        <p>2)hydrocortisone</p>
+        <p>3)Analpram-HC</p>
+		    <p>4)Proctofoam</p>
+		    <p>5)hydrocortisone / pramoxine</p>
+        <p>6)pramoxine</p>		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="hk" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hk').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Heart attack - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Aspirin.</p>
+		    <p>2)Thrombolytics.</p>
+		    <p>3)Antiplatelet agents.</p>
+		    <p>4)Nitroglycerin.</p>
+		    <p>5)Beta blockers.</p>
+		    <p>6)ACE inhibitors.</p>
+		    <p>7)Statins.</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="vs" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('vs').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Varicose veins - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)polidocanol</p>
+		    <p>2)Sotradecol</p>
+		    <p>3)Asclera</p>
+		    <p>4)Varithena</p>
+		    <p>5)sodium tetradecyl sulfate</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="hm" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hm').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hypothyroidism - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Westhroid</p>
+		    <p>2)Levo-T</p>
+		    <p>3)Armour Thyroid (Pro)</p>
+		    <p>4)Tirosint (Pro)</p>
+		    <p>5)Synthroid (Pro)</p>
+		    <p>6)NP Thyroid (Pro)</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="hym" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hym').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hyperthyroidism - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)methimazole</p>
+		    <p>2)Tapazole</p>
+		    <p>3)propylthiouracil</p>
+		    <p>4)potassium iodide</p>
+		    <p>5)Iodotope</p>
+		    <p>6)ThyroShield</p>
+		
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="hya" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hya').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hypoglycemia - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Proglycem</p>
+		    <p>2)glucagon</p>
+		    <p>3)GlucaGen</p>	
+		    <p>4)diazoxide</p>	
+		    <p>5)Hyperstat</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<div id="os" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('os').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Osteoarthritis - Medicine</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)meloxicam</p>       
+        <p>2)diclofenac</p>		
+        <p>3)Celebrex</p>		
+        <p>4)diclofenac</p>	
+		
+	 </div>
+	 <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+ 
+
+  <div id="arts" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('arts').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Arthritis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+		    <p>1)methotrexate</p>       
+        <p>2)Enbrel</p>		
+        <p>3)Humira</p>		
+        <p>4)acetaminophen / hydrocodone</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+  <div id="po" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('po').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>(vertigo) Paroxysmal  Positional Vertigo - Medicine</h2>
+      </header>
+      <div class="w3-container">
+		    <p>1)meclizine</p>
+		    <p>2)Antivert</p>
+		    <p>3)Bonine</p>
+		    <p>4)Dramamine II</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="ae" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ae').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Acne - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)doxycycline</p>
+		    <p>2)spironolactone</p>
+		    <p>3)tretinoin</p>
+		    <p>4)isotretinoin</p>
+		    <p>5)Epiduo</p>	
+        <p>6)adapalene</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="un" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('un').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Urinary tract infection - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)nitrofurantoin</p>
+		    <p>2)sulfamethoxazole / trimethoprim</p>
+		    <p>3)ciprofloxacin</p>
+		    <p>4)Bactrim DS</p>
+		    <p>5)levofloxacin</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="pss" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('pss').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Psoriasis - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Tclobetasol</p>
+		    <p>2)methotrexate</p>
+		    <p>3)Humira</p>
+		    <p>4)Stelara</p>
+		    <p>5)Clobex</p>
+      </div>
+	  <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="io" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('io').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Impetigo - Medicine</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)mupirocin</p>
+		    <p>2)Altabax</p>
+		    <p>3)Ceftin</p>	
+		    <p>4)retapamulin</p>
+		    <p>5)cefadroxil</p>	
+		
+      </div>
+	   <b>Refresh this page for another Medicine.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+	<!--
+  <a href="" id="fn" style="display:none;">Fungal infection</a>
+  <a href="" id="ay" style="display:none;">Allergy</a>
+  <a href="" id="gd" style="display:none;">GERD</a>
+  <a href="" id="cs" style="display:none;">Chronic cholestasis</a>
+  <a href="" id="dn" style="display:none;">Drug Reaction</a>
+  <a href="" id="pe" style="display:none;">Peptic ulcer disease</a>
+  <a href="" id="as" style="display:none;">AIDS</a>
+  <a href="" id="ds" style="display:none;">Diabetes </a>
+  <a href="" id="gs" style="display:none;">Gastroenteritis</a>
+  <a href="" id="ba" style="display:none;">Bronchial Asthma</a>
+  <a href="" id="hn" style="display:none;">Hypertension</a>
+  <a href="" id="me" style="display:none;">Migraine</a>
+  <a href="" id="ces" style="display:none;">Cervical spondylosis</a>
+  <a href="" id="ps" style="display:none;">Paralysis (brain hemorrhage)</a>
+  <a href="" id="je" style="display:none;">Jaundice</a>
+  <a href="" id="ma" style="display:none;">Malaria</a>
+  <a href="" id="cx" style="display:none;">Chicken pox</a>
+  <a href="" id="de" style="display:none;">Dengue</a>
+  <a href="" id="td" style="display:none;">Typhoid</a>
+  <a href="" id="ha" style="display:none;">Hepatitis A</a>
+  <a href="" id="hb" style="display:none;">Hepatitis B</a>
+  <a href="" id="hc" style="display:none;">Hepatitis C</a>
+  <a href="" id="hd" style="display:none;">Hepatitis D</a>
+  <a href="" id="he" style="display:none;">Hepatitis E</a>
+  <a href="" id="als" style="display:none;">Alcoholic hepatitis</a>
+  <a href="" id="ts" style="display:none;">Tuberculosis</a>
+  <a href="" id="cd" style="display:none;">Common Cold</a>
+  <a href="" id="pa" style="display:none;">Pneumonia</a>
+  <a href="" id="dis" style="display:none;">Dimorphic hemmorhoids(piles)</a>
+  <a href="" id="hk" style="display:none;">Heart attack</a>
+  <a href="" id="vs" style="display:none;">Varicose veins</a>
+  <a href="" id="hm" style="display:none;">Hypothyroidism</a>
+  <a href="" id="hym" style="display:none;">Hyperthyroidism</a>
+  <a href="" id="hya" style="display:none;">Hypoglycemia</a>
+  <a href="" id="os" style="display:none;">Osteoarthristis</a>
+  <a href="" id="arts" style="display:none;">Arthritis</a>
+  <a href="" id="po" style="display:none;">(vertigo) Paroymsal  Positional Vertigo </a>
+  <a href="" id="ae" style="display:none;">Acne</a>
+  <a href="" id="un" style="display:none;">Urinary tract infection</a>
+  <a href="" id="pss" style="display:none;">Psoriasis</a>
+  <a href="" id="io" style="display:none;">Impetigo</a>
+  -->
+  </div>  
+  </div>
+
+
+<br>
+<br>
+
+
+<!-- Footer -->
+<footer>
+<div class="col-container">
+<div class="row">
+  <div class="column">
+    <div class="card">
+     
+      <p> Check disease<br><a href="/home" target="_blank">Prediction</a></p>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">    
+      <p>Get Cure<br><a href="/cure" target="_blank">Cure</a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<p>Get <br><a href="/appoint" target="_blank">Appointment</a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        
+      <p>Go back to<br><a href="/home_page" target="_blank">Home</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<!-- Footer -->
+
+<script src="{{ url_for('static' , filename="medicine/js/medscript.js")}}"></script>
+</body>
+</html>

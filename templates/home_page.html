@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Care Room - AI Disease Prediction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/open-iconic-bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/animate.css")}}">
+    
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/owl.carousel.min.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/owl.theme.default.min.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/magnific-popup.css")}}">
+
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/aos.css")}}">
+
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/ionicons.min.css")}}">
+    
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/flaticon.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/icomoon.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "home/css/style.css")}}">
+    
+    <style>
+        #more {display: none;}
+        #predictmore {display: none;}
+    </style>
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  	
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	     
+	      <a href="#" class="navbar-brand">
+            <img src="{{ url_for ('static', filename = 'home/images/mainlogo.png') }}" height="100" width="95" alt="CoolBrand">
+          </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span><i class="fa fa-fw fa-home" style='font-size:18px'></i>&nbsp;Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span class="glyphicon glyphicon-book" style='font-size:18px'>&nbsp;About</span></a></li>
+	          <li class="nav-item"><a href="#predict-section" class="nav-link"><span><i class="fa fa-heartbeat" style='font-size:18px'></i>&nbsp;Prediction</span></a></li>
+	          <li class="nav-item"><a href="#cure-section" class="nav-link"><span><i class="fa fa-stethoscope" style='font-size:18px'></i>&nbsp;Cure</span></a></li>
+	          <li class="nav-item"><a href="#medicine-section" class="nav-link"><span><i class="fa fa-plus-square" style='font-size:18px'></i>&nbsp;Medicines</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span><i class="fa fa-address-book" style='font-size:18px'></i>&nbsp;Contact</span></a></li>
+	          <li class="nav-item cta mr-md-2"><a href="/appoint"><span class="glyphicon glyphicon-calendar" style='font-size:18px'></span>Appointment</a></li>
+	          <li class="nav-item"><a href="/" class="nav-link"><span class="glyphicon glyphicon-log-out" style='font-size:18px'>Logout</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  
+    <section class="hero-wrap js-fullheight" style="background-image: url({{ url_for ('static', filename = 'home/images/Backg_1.png') }});" data-section="home" data-stellar-background-ratio="0.5" id="home-section">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 pt-5 ftco-animate">
+          	<div class="mt-5">
+          		<span class="subheading" style="color:#15253D;">Welcome to Care Room</span>
+	            <h1 class="mb-4" style="color:#15253D;font-size:45px;" >Use our web-application and <br><h1 style="color:#15253D;font-size:45px;">Cure Disease<br>anywhere anytime.</h1></h1>
+	         
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{ url_for ('static', filename = 'home/images/Aboutus.png') }});">
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
+    				<div class="py-md-5">
+	    				<div class="row justify-content-start pb-3">
+			          <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
+			           
+			            <p>Care Room (AI Disease Prediction) is a Web App, here the user will chose the symptoms he is suffering with, then AI algorithms predicts the disease that the person is likely to get based on the health data that is available. It can’t predict only the disease on the<span id="dots">...</span><span id="more"> basis of data it can also tell the ways that how to cure/avoid that disease. It can also suggest you medicines on the basis of your predicted disease. System has the data sets collected from various sources and with the help of this system users will get to know the probability of disease with provided symptoms. User can book appointment for better concernment.</span></p>
+			            <p><button onclick="readFunction()" id="myBtn">Read more</button></p>
+			          </div>
+			        </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+    
+    
+    
+    
+    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="predict-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
+    				<div class="py-md-5">
+	    				<div class="row justify-content-start pb-3">
+			          <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
+			            <h2 class="mb-4">Care Room will <span>Predict</span> your disease.</h2>
+			            <p>Here we will predict your disease on the basis of your chosen symptoms.<span id="predictdots">...</span><span id="predictmore"> <br>Steps <br> Step 1: user will choose the symptoms. <br>Step 2: Then the user will get know about his illness with the help of AI algorithm. <br>After disease prediction, know how to cure your disease. <br>And we will suggest the best medicine on the basis of your disease. <br><b>NOTE</b> : this disease are not 100% accurate.</span> <p>
+			            <p><a href="/home" class="btn btn-primary py-3 px-4">Predict</a>&nbsp;&nbsp;<button onclick="predictFunction()" id="predictmyBtn">know more</button></p>
+			          </div>
+			        </div>
+		        </div>		        
+	        </div>
+	        <div class="col-md-6 col-lg-5 d-flex">
+    			<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{ url_for ('static', filename = 'home/images/Prediction.png') }}); border-radius: 25%;">
+    			</div>
+    		</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section class="hero-wrap js-fullheight" style="background-image: url({{ url_for ('static', filename = 'home/images/quote1.png') }});" data-section="home" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 pt-5 ftco-animate">
+          	
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="cure-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{ url_for ('static', filename = 'home/images/Exercise.png') }}); ">
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
+    				<div class="py-md-5">
+	    				<div class="row justify-content-start pb-3">
+			          <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
+			            <h2 class="mb-4">Care Room will suggest you best<span> Cure</span></h2>
+			            <p>Here we will suggest you best cure of your predicted disease. You have to paste your disease name at cure page from disease prediction page.</p>
+			            <p><a href="/cure" class="btn btn-primary py-3 px-4">Cure</a></p>
+			          </div>
+			        </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+    
+    
+    
+    
+    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="medicine-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
+    				<div class="py-md-5">
+	    				<div class="row justify-content-start pb-3">
+			          <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
+			            <h2 class="mb-4">Care Room will prescribe you best<span> Medication</span></h2>
+			            <p>Here we will suggest you best medication according to your disease. You have to paste your disease name at medicine page from disease prediction page.</p>
+			            <p><a href="/medicine" class="btn btn-primary py-3 px-4">Medicines</a></p>
+			          </div>
+			        </div>
+		        </div>
+	        </div>
+	        <div class="col-md-6 col-lg-5 d-flex">
+    			<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{ url_for ('static', filename = 'home/images/Medicine.png') }}); ">
+    			</div>
+    		</div>
+        </div>
+    	</div>
+    </section>
+    
+    
+    
+     <section class="hero-wrap js-fullheight" style="background-image: url({{ url_for ('static', filename = 'home/images/quote2.png') }}); " data-section="home" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 pt-5 ftco-animate">
+          	
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section contact-section" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Us</h2>
+            <p>We will always support you. You can feel free to ask anything about this web application.</p>
+          </div>
+        </div>
+        
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" >
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://1234567920">+91 63556 82480</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" >
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">info@care_room.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" >
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Suggest us</h3>
+	            <p><a href="mailto:info@yoursite.com">info@care_room.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" >
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Website</h3>
+	            <p><a href="#">CareRoom.com</a></p>
+	          </div>
+          </div>
+        </div>
+       
+
+        
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section img" style="background-image: url(home/images/footer-bg.jpg);">
+    	<div class="overlay"></div>
+      <div class="container-fluid px-md-5">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Care Room</h2>
+              <p>Our main aims is to provide a web platform to predict the occurrences of disease on the basic of various symptoms.<br>We hope that this application can save a many people’s life.</p>
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+         
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#predict-section"><span class="icon-long-arrow-right mr-2"></span>Prediction</a></li>
+                <li><a href="#cure-section"><span class="icon-long-arrow-right mr-2"></span>Cure</a></li>
+                <li><a href="#medicine-section"><span class="icon-long-arrow-right mr-2"></span>Medicines</a></li>
+                <li><a href="/appoint"><span class="icon-long-arrow-right mr-2"></span>Appointment</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#predict-section"><span class="icon-long-arrow-right mr-2"></span>Prediction</a></li>
+                <li><a href="#cure-section"><span class="icon-long-arrow-right mr-2"></span>Cure</a></li>
+                <li><a href="#medicine-section"><span class="icon-long-arrow-right mr-2"></span>Medicines</a></li>
+                <li><span class="icon-long-arrow-right mr-2"></span>24 Hours Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                
+	                <li><span class="icon icon-phone"></span><a href="tel://1234567920"><span class="text">+91 63556 82480</span></a></li>
+	                <li><span class="icon icon-envelope pr-4"></span><a href="mailto:info@yoursite.com"><span class="text">info@care_room.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+	
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This web application is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="/home_page" target="_blank">Care Room</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{{url_for('static' , filename = "home/js/jquery.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/jquery-migrate-3.0.1.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/popper.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/bootstrap.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/jquery.easing.1.3.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/jquery.waypoints.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/jquery.stellar.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/owl.carousel.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/jquery.magnific-popup.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/aos.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/jquery.animateNumber.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/scrollax.min.js")}}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{url_for('static' , filename = "home/js/google-map.js")}}"></script>
+  
+  <script src="{{url_for('static' , filename = "home/js/main.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/readmorejs.js")}}"></script>
+  <script src="{{url_for('static' , filename = "home/js/predictmorejs.js")}}"></script>
+    
+  </body>
+</html>

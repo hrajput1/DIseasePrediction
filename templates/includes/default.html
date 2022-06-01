@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/open-iconic-bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/animate.css")}}">
+    
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/owl.carousel.min.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/owl.theme.default.min.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/magnific-popup.css")}}">
+
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/aos.css")}}">
+
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/ionicons.min.css")}}">
+    
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/flaticon.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/icomoon.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = "css/style.css")}}">
+    -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+      body, html {
+    height: 100%;
+}
+.bg { 
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head {
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  border-bottom: double;
+  text-align: center;
+}
+
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+
+.tablink {
+    background-color: #FEA127;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: green;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    width: 855px;
+    position: relative;
+    height: 350px;
+}
+
+#footer{background-color: black;
+text-decoration: underline;
+text-align: center;
+font-family: sans-serif;
+text-decoration-color: white;
+color: white;
+align-self: bottom;}
+#Symptom {background-color:#78A9FD; width: 600px; top:45px ;left: 50px;height:450px;}
+#Doctor {background-color: #78A9FD; width: 600px;top:45px; left: 50px}
+#Drug {background-color: #78A9FD; width: 600px;top:45px ;left: 50px}     
+      
+    </style>
+
+  </head>
+  <body>
+    {% block body%}
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	     
+	      <a href="#" class="navbar-brand">
+            <img src="{{ url_for ('static', filename = 'images/logo.png') }}" height="100" width="95" alt="CoolBrand">
+          </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span><i class="fa fa-fw fa-home" style='font-size:20px'></i>&nbsp;Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span class="glyphicon glyphicon-book" style='font-size:20px'>&nbsp;About</span></a></li>
+	          <li class="nav-item"><a href="#department-section" class="nav-link"><span><i class="fa fa-heartbeat" style='font-size:20px'></i>&nbsp;Prediction</span></a></li>
+	          <li class="nav-item"><a href="#doctor-section" class="nav-link"><span><i class="fa fa-stethoscope" style='font-size:20px'></i>&nbsp;Cure</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span><i class="fa fa-plus-square" style='font-size:20px'></i>&nbsp;Medicines</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span><i class="fa fa-address-book" style='font-size:20px'></i>&nbsp;Contact</span></a></li>
+	          <li class="nav-item cta mr-md-2"><a href="appointment.html" class="nav-link"><span class="glyphicon glyphicon-calendar" style='font-size:20px'></span>Appointment</a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span class="glyphicon glyphicon-log-out" style='font-size:20px'>Logout</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    -->
+    <div class="bg"> 
+      <br>
+      <div>
+      <center><img src="https://lh3.googleusercontent.com/XGu4L46rhIGXaY60ejWMFXkyctL0J4BymlqWBUqKnPlbh9CiTyqIIBI1QBQ4HLO35LozJV2wmp8=w328-h299-no" 
+        style="height:70px; width: 70px; position: absolute;top:20px; left:560px">
+      <span style="font-size:50px; text-shadow: 3px 3px 6px #40e0d0;font-weight: bolder;font-family:'Garamound';color:blue">Care For You</span></center>
+      </div>
+      <br>
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-center">
+              <li class=""><a href="/default">HOME</a></li>
+              <!-- <li class=""><a href="#">ABOUT US</a></li> -->
+            </ul>
+          </div>
+        </nav>
+    <div>
+        <button class="tablink" onclick="openTab('Symptom', this, 'red')" id="defaultOpen" style="width: 300px; position: absolute; top: 175px; left:50px; ">Symptom checker</button>
+        <button class="tablink" onclick="openTab('Doctor', this, 'red')" id="doctortab" style="width: 300px; position: absolute; top: 175px; left:350px; ">Find My Doctor</button>
+        <!-- <button class="tablink" onclick="openTab('Drug', this, 'red')" id="drugdetail" style="width: 200px; position: absolute; top: 175px; left:450px; ">Know My Drug</button> -->
+</div>
+
+<div id="Symptom" class="tabcontent">
+  <form name="SymptomForm" id="SymForm" method="POST" action=/disease_predict>
+    <div class="head">
+      Symptom Checker
+    </div>
+    <div class="form-group">
+      <!-- <select multiple data-role="tagsinput" class="form-control" size=1>
+          {% for symp in symptoms  %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </select> -->
+      <label for="Symptom1" align="left">Symptom1</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom1">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom2" align="left">Symptom2</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom2">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom3" align="left">Symptom3</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom3">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom4" align="left">Symptom4</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom4">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom5" align="left">Symptom5</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom5">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+    </div>
+    
+    <button type="submit" class="btn btn-primary" style="padding: 10px;" name=form>Check</button>
+</form>
+</div>
+
+<div id="Doctor" class="tabcontent">
+  <div class="head">
+      Find My Doctor
+    </div>
+    <form name="Doctor_search" id="DoctorForm" method="POST" action=/find_doctor>
+ <input type="text" class="form-control" name="doctor"><br>
+ <button type="submit" class="btn btn-primary" style="padding: 10px;" name="search_doctor">Search</button>
+ </form>
+</div>
+
+<!--
+  <section class="ftco-section contact-section" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Us</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          </div>
+        </div>
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center bg-light">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Website</h3>
+	            <p><a href="#">yoursite.com</a></p>
+	          </div>
+          </div>
+        </div>
+       
+
+        
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section img" style="background-image: url(images/footer-bg.jpg);">
+    	<div class="overlay"></div>
+      <div class="container-fluid px-md-5">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Mediplus</h2>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Departments</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Neurology</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Opthalmology</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Nuclear Magnetic</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Surgical</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cardiology</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Dental</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Departments</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Doctors</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Pricing</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Emergency Services</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Qualified Doctors</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Outdoors Checkup</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>24 Hours Services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+	
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    -->
+<!-- <div id="Drug" class="tabcontent">
+  <form name="MedicineForm" id="medForm" method="POST">
+    <div class="head">
+      Know Your Drug
+    </div>
+    <div class="form-group">
+        <label for="medicine" align="left">Name</label>
+        <input type="text" class="form-control" id="medicine" placeholder="medicine name" name="medicine">
+        <br>
+      <button class="btn btn-primary" type="submit" method='POST'>Know about it</button>
+    </div>
+  </form>
+<script type="text/javascript">
+  function showResult(argument) {
+    // body...
+    document.getElementById(argument).style.color = "white";
+  }
+</script>
+</div> -->
+
+</div>
+<div id="footer" style="position: absolute; bottom: 0px; left: 0px; width: 100%; height: 50px;">
+  <p>Copyright:Anonymous-2018</p>
+</div>
+</div>
+<!--
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{{url_for('static' , filename = "js/jquery.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/jquery-migrate-3.0.1.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/popper.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/bootstrap.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/jquery.easing.1.3.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/jquery.waypoints.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/jquery.stellar.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/owl.carousel.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/jquery.magnific-popup.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/aos.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/jquery.animateNumber.min.js")}}"></script>
+  <script src="{{url_for('static' , filename = "js/scrollax.min.js")}}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{url_for('static' , filename = "js/google-map.js")}}"></script>
+  
+  <script src="{{url_for('static' , filename = "js/main.js")}}"></script>
+    -->
+<script>
+
+  
+function openTab(tabName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+    {% endblock %}
+  </body>
+</html>

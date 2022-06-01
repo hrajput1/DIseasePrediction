@@ -1,0 +1,1016 @@
+<html>
+<head>
+	<title> Cure </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename="cure/css/curestyle1.css")}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+a:link, a:visited {
+  background-color: gray;
+  color: black;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<img src="{{ url_for('static' , filename="cure/images/Cure_1.png")}}" width="100%" height="400px">
+<!--Make sure the form has the autocomplete function switched off:-->
+
+<h3><b>Know Cure of your Disease here...</b></h3>
+<div class="w3-container">
+  <div class="autocomplete" style="width:300px;">
+  
+    <input  type="text" name="disease" id="dis" placeholder="Disease">
+	<hr>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onclick="myFunction()" class="w3-button w3-black">Check here</button>
+	
+	<!--Disease box-->
+	
+  <div id="fn" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('fn').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Fungal Infection - Cure</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Ringworm: Prevent it by keeping your body clean and dry. It’s easily spread, so don’t share towels, combs, or other personal items.</p>       
+        <p>2)Athlete’s Foot: Prevent it by wearing shower shoes at the gym, washing your feet daily, drying them well, and wearing clean socks.</p>		
+        <p>3)Nail Fungus: Prevent nail fungus by keeping hands and feet clean and dry, wearing dry socks and changing them often, wearing shoes in a public shower, pool, or locker room, and not scratching infected skin, such as athlete’s foot. </p>		
+        <p>4)Other: Change out of your gym clothes right after a workout. Sweaty gear provides a perfect home for fungi and other germs to thrive and grow. Wash exercise clothes after each use.</p>		
+	 </div>
+	 <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+  <div id="ay" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ay').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Allergy - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Shut Out Breezes: It’s a gorgeous day. But if the pollen count is high, keep the windows and doors closed to protect your indoor air.</p>
+        <p>2)Wash Up:  After being outdoors, your clothes, shoes, hair, and skin are covered with tiny particles from everywhere you’ve been. Take a shower and change your clothes to wash away any allergens.</p>
+        <p>3)Wear a Mask: Were respirator mask, it will block 95% of small particles, such as pollen and other allergens.</p>
+		<p>4)Eat Healthy: there’s no doubt that a healthy diet is good for your whole body. Add at least one fresh fruit and veggie to every meal.</p>
+		<p>5)Drink More: If you feel stuffy or have postnasal drip from your allergies, sip more water, juice, or other nonalcoholic drinks.</p>
+		<p>6)Avoid Cigarette Smoke: Choose smoke-free restaurants, nightclubs, and hotel rooms. Avoid other fumes that can make your symptoms worse, too, like aerosol sprays and smoke from wood-burning fireplaces.</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="gd" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('gd').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>GERD - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Maintain a healthy weight: Excess pounds put pressure on your abdomen, pushing up your stomach and causing acid to reflux into your esophagus.</p>
+		<p>2)Stop smoking: Smoking decreases the lower esophageal sphincter's ability to function properly.</p>
+		<p>3)Don't lie down after a meal: Wait at least three hours after eating before lying down or going to bed.</p>
+		<p>4)Eat food slowly and chew thoroughly: Put down your fork after every bite and pick it up again once you have chewed and swallowed that bite.</p>
+		<p>5)Avoid tight-fitting clothing: Clothes that fit tightly around your waist put pressure on your abdomen and the lower esophageal sphincter.</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="cs" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cs').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Chronic cholestasis - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)In chronic cholestasis, careful attention must be paid to prevent fat-soluble vitamin deficiencies, which are common complications in pediatric patients with chronic cholestasis</p>
+		<p>This is accomplished by administering fat-soluble vitamins and monitoring the response to therapy.</p>
+		<p>Oral absorbable, fat-soluble vitamin formulation A, D, E, and K supplementation is safe and potentially effective in pediatric patients with cholestasis.</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="dn" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('dn').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Drug Reaction - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Self Care</p>
+		<p>2)Aware about all drugs which you take in.</p>
+		<p>3)Check date expiry</p>
+		<p>4)Always take suggestion from medical specialist.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="pe" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('pe').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Peptic ulcer disease - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Please take medications according to directions</p>
+		<p>2)Choose a healthy diet.</p>
+		<p>3)Control stress.</p>
+		<p>4)Don't smoke.</p>
+		<p>5)Limit or avoid alcohol.</p>
+		<p>Try to get enough sleep.</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="as" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('as').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>AIDS - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)use a condom during sexual intercourse.</p>
+		<p>2)Avoid sharing syringes;</p>
+		<p>3)Diaphragms and Other Cervical Barriers</p>	
+		<p>4)Please take expert doctor suggestion.</p>		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="ds" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ds').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Diabetes - Cure</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Walking</p>       
+        <p>2)Tai Chi: This Chinese form of exercise uses slow, smooth body movements to relax the mind and body.</p>		
+        <p>3)Yoga</p>		
+        <p>4)Dancing</p>	
+		<p>5)Swimming</p>
+		<p>6)Diet, exercise, medication and insulin therapy.</p>
+	 </div>
+	 <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+ </div>
+
+  <div id="gs" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('gs').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Gastroenteritis - Cure</h2>
+      </header>
+      <div class="w3-container">
+		<p>1)Stop eating solid foods to let your stomach settle</p>
+		<p>2)Avoid dairy products, caffeine, alcohol, nicotine</p>
+		<p>3)Cleaning and disinfecting kitchen surfaces, especially after working with raw meat or chicken, or eggs</p>
+		<p>4)Avoid drinking untreated water</p>
+		<p>5)Thoroughly wash any fresh produce, such as fruits and vegetables</p>
+		<p>6)Drink only bottled or boiled water and avoid ice cubes when travelling</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="ba" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ba').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Bronchial Asthma - Cure</h2>
+      </header>
+      <div class="w3-container">
+		<p>1)Identify Asthma Triggers like Air pollution,Allergies,Cold air,a cold or flu virus,Sinusitis,Smoke</p>
+		<p>2)Stay Away From Allergens</p>
+		<p>3)Take Asthma Medications as Prescribed</p>
+		<p>4)Consider Immunotherapy Allergy Shots</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="hn" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hn').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hypertension - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Eating a healthier diet with less salt</p>
+		<p>2)Exercising regularly and taking medication can help lower blood pressure</p>
+		<p>3)Pursuing an enjoyable activity or verbalising frustration to reduce stress and improve mental health.</p>
+		<p>4)Quitting smoking tobacco.</p>
+		<p>5)A diet that restricts salt (sodium chloride) and other forms of sodium to no more than 2,000 mg per day</p>		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="me" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('me').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Migraine - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Preventive and pain-relieving medication can help manage migraine headaches.</p>
+		<p>2)Avoid Common triggers include alcohol, caffeine or poor sleep.</p>
+		<p>3)Pursuing an enjoyable activity or verbalising frustration to reduce stress and improve mental health.</p>
+		<p>4)Good sleep practices include having a regular bedtime schedule and avoiding naps, caffeine and TV before bedtime.</p>
+		<p>5)Adjusting diet to reduce triggers causing disease or address dietary deficiencies.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="ces" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ces').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Cervical spondylosis - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Regular exercise.</p>
+		<p>2)Applying heat or ice to your neck can ease sore neck muscles.</p>
+		<p>3)The brace allows your neck muscles to rest. However, a neck brace should be worn for only short periods of time because it can eventually weaken neck muscles.</p>	
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="ps" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ps').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Paralysis (brain hemorrhage) - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Physical therapy uses treatments such as heat, massage, and exercise to stimulate nerves and muscles.</p>
+		<p>2)Occupational therapy concentrates on ways to perform activities of daily living.</p>
+		<p>3)Mobility aids include manual and electric wheelchairs and scooters.</p>	
+		<p>4)Supportive devices include braces, canes, and walkers.</p>
+		<p>5)Assistive technology such as voice-activated computers, lighting systems, and telephones.</p>	
+		<p>6)Adaptive equipment such as special eating utensils and controls for driving a car.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+  <div id="je" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('je').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Jaundice - Cure</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Gallstones that are resulting in jaundice might require treatment, which is typically the removal of the gallbladder.</p>       
+        <p>2)If anemia, the lack of red blood cells, is the cause of jaundice, the treatment might include a blood transfusion.</p>		
+        <p>3)If alcoholic beverages are the cause of liver disease, stopping drinking is going to be crucial to resolving jaundice. </p>		
+        <p>4)Talk to your doctor.</p>	
+		<p>5)Newborn jaundice is common, and will often resolve on its own without any treatment. </p>
+	 </div>
+	 <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="ma" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ma').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Malaria - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Health promotion activities include eating balanced meals,doing appropriate and adequate exercise/physical activities, and actively participating in social activities.</p>
+        <p>2)Self treatment/medication: using home remedies during sickness, such as taking fluids like ORS when having diarrhoea, taking a sponge bath, or paracetamol tablets during fever, etc. </p>
+        <p>3)Seeking medical assistance: if fever, discomfort, pain or bleeding does not subside; going to health centre or hospital for professional treatment.</p>
+		<p>4)Eat Healthy: there’s no doubt that a healthy diet is good for your whole body. Add at least one fresh fruit and veggie to every meal.</p>
+		<p>5)A healthy lifestyle can prevent many illnesses or delay the onset and severity of existing ailments.</p>	
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="cx" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cx').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Chicken pox - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Oatmeal bath: A mixture of oatmeal and water that soothes irritated skin.</p>
+		<p>2)Stop smoking: Smoking decreases the lower esophageal sphincter's ability to function properly.</p>
+		<p>3)Moisturizer: Hydrates and protects skin from damage.</p>
+		<p>4)Consult a doctor for medical advice</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="de" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('de').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Dengue - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Wear N,N-diethyl-3-methylbenzamide (DEET)–containing mosquito repellant.</p>
+		<p>2)Wear protective clothing, preferably impregnated with permethrin insecticide.</p>
+		<p>3)Remain in well-screened or air-conditioned places.</p>	
+		<p>4)The use of mosquito netting is of limited benefit, as Aedes are day-biting mosquitoes</p>
+		<p>5)Eliminate the mosquito vector using indoor sprays</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+<div id="td" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('td').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Typhoid - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Avoiding food that is raw or undercooked</p>
+		<p>2)Drinking only bottled water or water that has been boiled.</p>
+		<p>3)Thoroughly washing your hands each time before eating</p>
+		<p>4)Avoiding raw fruits and vegetables that cannot be peeled</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+  
+  <div id="ha" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ha').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis A - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Rest and adequate hydration can help.</p>
+		<p>2)Rehydration: Replacing lost body fluid by drinking more fluids or administering fluids by intravenous therapy (IV).</p>
+		<p>3)Avoid alcohol: May be harmful and aggravate certain conditions.</p>	
+		<p>4)Can be self-healing: Condition usually improves over time without treatment.</p>		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+<div id="hb" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hb').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis B - Cure</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Avoid alcohol: May be harmful and aggravate certain conditions.</p>       
+        <p>2)Post-exposure prevention: Taking emergency medication to prevent illness after being exposed to a disease-causing virus or bacterium.</p>		
+        <p>3)Consult a doctor for medical advice</p>		
+        <p>4)Antiviral drug: Reduces viruses' ability to replicate.</p>	
+	 </div>
+	 <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+ </div>
+  
+  <div id="hc" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hc').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis C - Cure</h2>
+      </header>
+      <div class="w3-container">
+		<p>1)Hepatitis C is treated with antiviral medication.</p>
+		<p>2)Avoid alcohol: May be harmful and aggravate certain conditions.</p>
+		<p>3)Consult a doctor for medical advice</p>
+		<p>4)Avoid drinking untreated water</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="hd" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hd').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis D - Cure</h2>
+      </header>
+      <div class="w3-container">
+		<p>1)Consult a doctor for medical advice</p>
+		<p>2)Avoid alcohol: May be harmful and aggravate certain conditions.</p>
+		<p>3)Treatment focuses on supportive care, rehydration and rest.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="he" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('he').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hepatitis E - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Treatment focuses on supportive care, rehydration and rest.</p>
+		<p>2)Rest: Reducing activity for a short period of time following an injury to promote healing.</p>
+		<p>3)Avoid alcohol: May be harmful and aggravate certain conditions.</p>
+				
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="als" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('als').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Alcoholic hepatitis - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Treatment involves hydration, nutritional care and stopping alcohol use.</p>
+		<p>2)Steroid drugs can help reduce liver inflammation.</p>
+		<p>3)Abstinence: Avoidance of an activity.</p>
+		<p>4)Consult a doctor for medical advice.</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="ts" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ts').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Tuberculosis - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Take your antibiotics as directed.</p>
+		<p>2)Take your medicine with food to help avoid an upset stomach.</p>
+		<p>3)Cover your mouth when you sneeze or cough.</p>	
+		<p>4)Avoid public areas such as buses, subways, and other closed areas until you have been told that you cannot spread TB.</p>		
+		<p>5)Consult a doctor for medical advice.</p>		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="cd" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cd').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Common Cold - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Drinking plenty of fluids. Water, juice, clear broth or warm lemon water are good choices.</p>
+		<p>2)Resting.</p>
+		<p>3)Adjusting your room's temperature and humidity.</p>	
+		<p>4)Soothing your throat.</p>
+		<p>5)Using saline nasal drops.</p>	
+		<p>6)Consult a doctor for medical advice.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="pa" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('pa').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Pneumonia - Cure</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Get plenty of rest.</p>       
+        <p>2)Don't go back to school or work until after your temperature returns to normal and you stop coughing up mucus.</p>		
+        <p>3)Stay hydrated. </p>		
+        <p>4)Drink plenty of fluids, especially water, to help loosen mucus in your lungs.</p>	
+		<p>5)Take your medicine as prescribed.</p>
+	 </div>
+	 <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="dims" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('dims').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Dimorphic hemorrhoids(piles) - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Take sitz baths.</p>
+        <p>2)Develop good bowel habits.</p>
+        <p>3)Use the bathroom when you need to.</p>
+		<p>4)Placing an ice pack on a thrombosed external hemorrhoid can help relieve pain right away.</p>
+		<p>5)Consult a doctor for medical advice.</p>		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="hk" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hk').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Heart attack - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Avoid smoke.</p>
+		<p>2)Control your blood pressure and cholesterol levels.</p>
+		<p>3)Get regular medical checkups.</p>
+		<p>4)Exercise regularly.</p>
+		<p>5)Maintain a healthy weight.</p>
+		<p>6)Eat a heart-healthy diet.</p>
+		<p>7)Manage diabetes.</p>
+		<p>8)Control stress.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="vs" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('vs').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Varicose veins - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Exercising.</p>
+		<p>2)Losing weight</p>
+		<p>3)Not wearing tight clothes</p>
+		<p>4)Elevating your legs</p>
+		<p>5)Avoiding long periods of standing or sitting</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="hm" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hm').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hypothyroidism - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Meditate to Reap Scientifically Proven Benefits for Stress Relief</p>
+		<p>2)Get a Massage to Help Reduce Worrying and Help Yourself Relax</p>
+		<p>3)Fit in a Workout for Mental and Physical Health Benefits</p>
+		<p>4)Disconnect and Get Outdoors for Some Fresh Air</p>
+		<p>5)Make Sure You’re Getting Enough Sleep to Keep Your Energy Levels Up</p>
+		<p>6)Consult a doctor for medical advice.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="hym" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hym').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hyperthyroidism - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Non-iodized salt.</p>
+		<p>2)Coffee or tea (without milk or dairy- or soy-based creamers)</p>
+		<p>3)Fresh or canned fruit.</p>
+		<p>4)Unsalted nuts and nut butters.</p>
+		<p>5)Homemade bread or breads made without salt, dairy, and eggs.</p>
+		<p>6)Egg whites.</p>
+		
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="hya" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('hya').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Hypoglycemia - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)A glucose monitor is available for people to check their own blood sugars in the comfort and privacy of their own home.</p>
+		<p>2)Eat something that has about 15 grams (g) of carbohydrates.</p>
+		<p>3)Wait about 15 minutes before eating any more.</p>	
+		<p>4)Check your blood sugar again.</p>	
+		<p>5)If you do not feel better in 15 minutes and your blood sugar is still lower than 70 mg/dL (3.9 mmol/L), eat something with 15 g of carbohydrate again.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<div id="os" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('os').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Osteoarthritis - Cure</h2>
+      </header>
+      <div class="w3-container">      
+        <p>1)Stay active.</p>       
+        <p>2)Eat a balanced diet.</p>		
+        <p>3)Lose weight.</p>		
+        <p>4)Sleep well.</p>	
+		
+	 </div>
+	 <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+ 
+
+  <div id="arts" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('arts').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Arthritis - Cure</h2>
+      </header>
+      <div class="w3-container">
+		<p>1)Stay active.</p>       
+        <p>2)Eat a balanced diet.</p>		
+        <p>3)Lose weight.</p>		
+        <p>4)Sleep well.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+  <div id="po" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('po').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>(vertigo) Paroxysmal  Positional Vertigo - Cure</h2>
+      </header>
+      <div class="w3-container">
+		<p>1)Wait for 10 minutes after the maneuver is performed before going home. </p>
+		<p>2)Sleep semi-recumbent for the next night. </p>
+		<p>3)At one week after treatment, put yourself in the position that usually makes you dizzy.</p>
+		<p>4)Consult a doctor for medical advice.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="ae" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('ae').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Acne - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Clean your skin gently with a mild, non-drying soap, such as Dove, Neutrogena, Cetaphil, or CeraVe.</p>
+		<p>2)Wash once or twice a day, and also after exercising.</p>
+		<p>3)Shampoo your hair daily, if it is oily.</p>
+		<p>4)Avoid using rubbing alcohol or toners that are very drying to the skin.</p>
+		<p>5)Avoid oil-based cosmetics.</p>	
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="un" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('un').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Urinary tract infection - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Stay hydrated.</p>
+		<p>2)Urinate when the need arises.</p>
+		<p>3)Drink cranberry juice.</p>
+		<p>4)Use probiotics.</p>
+		<p>5)Get enough vitamin C.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="pss" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('pss').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Psoriasis - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Take daily baths. Bathing daily helps remove scales and calm inflamed skin.</p>
+		<p>2)Use moisturizer. After bathing, apply a heavy, ointment-based moisturizer while your skin is still moist.</p>
+		<p>3)Expose your skin to small amounts of sunlight.</p>
+		<p>4)Avoid psoriasis triggers, if possible.</p>
+		<p>5)Avoid drinking alcohol.</p>
+      </div>
+	  <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+  
+  <div id="io" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('io').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Impetigo - Cure</h2>
+      </header>
+      <div class="w3-container">
+        <p>1)Clean all sores and bites with antibacterial soap and water. Don't scratch or pick.</p>
+		<p>2)The infection is contagious. Use separate washcloths, razors, and hand towels.</p>
+		<p>3)Often, the rash and infection will go away on its own, but antibiotics are usually needed to get rid of the infection.</p>	
+		<p>4)Apply antibacterial ointment, but wash hands well after applying it.</p>
+		<p>5)If the sores are in areas that are shaved (men on their face; women on their legs), shave around the sores to avoid spreading the infection further.</p>	
+		
+      </div>
+	   <b>Refresh this page for another cure.</b>
+      <footer class="w3-container w3-teal">
+        <p>Care Room</p>
+      </footer>
+    </div>
+  </div>
+
+	<!--
+  <a href="" id="fn" style="display:none;">Fungal infection</a>
+  <a href="" id="ay" style="display:none;">Allergy</a>
+  <a href="" id="gd" style="display:none;">GERD</a>
+  <a href="" id="cs" style="display:none;">Chronic cholestasis</a>
+  <a href="" id="dn" style="display:none;">Drug Reaction</a>
+  <a href="" id="pe" style="display:none;">Peptic ulcer disease</a>
+  <a href="" id="as" style="display:none;">AIDS</a>
+  <a href="" id="ds" style="display:none;">Diabetes </a>
+  <a href="" id="gs" style="display:none;">Gastroenteritis</a>
+  <a href="" id="ba" style="display:none;">Bronchial Asthma</a>
+  <a href="" id="hn" style="display:none;">Hypertension</a>
+  <a href="" id="me" style="display:none;">Migraine</a>
+  <a href="" id="ces" style="display:none;">Cervical spondylosis</a>
+  <a href="" id="ps" style="display:none;">Paralysis (brain hemorrhage)</a>
+  <a href="" id="je" style="display:none;">Jaundice</a>
+  <a href="" id="ma" style="display:none;">Malaria</a>
+  <a href="" id="cx" style="display:none;">Chicken pox</a>
+  <a href="" id="de" style="display:none;">Dengue</a>
+  <a href="" id="td" style="display:none;">Typhoid</a>
+  <a href="" id="ha" style="display:none;">Hepatitis A</a>
+  <a href="" id="hb" style="display:none;">Hepatitis B</a>
+  <a href="" id="hc" style="display:none;">Hepatitis C</a>
+  <a href="" id="hd" style="display:none;">Hepatitis D</a>
+  <a href="" id="he" style="display:none;">Hepatitis E</a>
+  <a href="" id="als" style="display:none;">Alcoholic hepatitis</a>
+  <a href="" id="ts" style="display:none;">Tuberculosis</a>
+  <a href="" id="cd" style="display:none;">Common Cold</a>
+  <a href="" id="pa" style="display:none;">Pneumonia</a>
+  <a href="" id="dis" style="display:none;">Dimorphic hemmorhoids(piles)</a>
+  <a href="" id="hk" style="display:none;">Heart attack</a>
+  <a href="" id="vs" style="display:none;">Varicose veins</a>
+  <a href="" id="hm" style="display:none;">Hypothyroidism</a>
+  <a href="" id="hym" style="display:none;">Hyperthyroidism</a>
+  <a href="" id="hya" style="display:none;">Hypoglycemia</a>
+  <a href="" id="os" style="display:none;">Osteoarthristis</a>
+  <a href="" id="arts" style="display:none;">Arthritis</a>
+  <a href="" id="po" style="display:none;">(vertigo) Paroymsal  Positional Vertigo </a>
+  <a href="" id="ae" style="display:none;">Acne</a>
+  <a href="" id="un" style="display:none;">Urinary tract infection</a>
+  <a href="" id="pss" style="display:none;">Psoriasis</a>
+  <a href="" id="io" style="display:none;">Impetigo</a>
+  -->
+  </div>  
+  </div>
+
+
+<br>
+<br>
+
+
+<!-- Footer -->
+<footer>
+<div class="col-container">
+<div class="row">
+  <div class="column">
+    <div class="card">
+     
+      <p> Check disease<br><a href="/home" target="_blank">Prediction</a></p>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">    
+      <p>Get Medicines<br><a href="/medicine" target="_blank">Medicines</a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+		<p>Get <br><a href="/appoint" target="_blank">Appointment</a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        
+      <p>Go back to<br><a href="/home_page" target="_blank">Home</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<!-- Footer -->
+
+<script src="{{ url_for('static' , filename="cure/js/curescript.js")}}"></script>
+</body>
+</html>
